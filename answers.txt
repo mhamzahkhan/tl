@@ -1,0 +1,10 @@
+1. If there is litterally no output (ie no email sent to the user whos crontab it is in regards to any errors), and nothing in the syslog regarding the execution of the script, then it could be possible that crond is not running.
+Alternatively, perhaps selinux is stopping crond from executing the script.
+
+2. Red Hat and Debian based
+
+3. CAT EOF is usually used to take input from stdin, until the EOF word has been reached.
+
+4. script_2.sh
+
+5. ssh-copy-id -i ~/.ssh/mykey mhamzahkhan@server
