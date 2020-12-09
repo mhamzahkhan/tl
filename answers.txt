@@ -1,5 +1,9 @@
-1. If there is litterally no output (ie no email sent to the user whos crontab it is in regards to any errors), and nothing in the syslog regarding the execution of the script, then it could be possible that crond is not running.
-Alternatively, perhaps selinux is stopping crond from executing the script.
+1. Normally, there would be something in the syslog entries for crond giving some idea as to what happened. For example a permissions error, or a line stating the script was run. Then you could use this to further diagonse the issue.
+
+If there is litterally no output (ie no email sent to the user whos crontab it is in regards to any errors), and nothing in the syslog regarding the execution of the script, then it could be possible that crond is not running.
+Alternatively, perhaps selinux is stopping crond from executing the script, though this would normally show a permisssions error if that was the case.
+
+Syntactically, there doesn't seem to be anything wrong with the script itself.
 
 2. Red Hat and Debian based
 
